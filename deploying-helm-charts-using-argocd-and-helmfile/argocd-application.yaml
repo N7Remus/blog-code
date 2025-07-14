@@ -5,9 +5,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/christianknell/blog-code.git
+    repoURL: https://github.com/N7Remus/blog-code.git
     targetRevision: main
     path: deploying-helm-charts-using-argocd-and-helmfile
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: bitnami
