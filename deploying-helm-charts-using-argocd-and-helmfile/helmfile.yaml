@@ -4,7 +4,7 @@ repositories:
 
 releases:
   - name: postgresql
-    namespace: default
+    namespace: bitnami
     chart: bitnami/postgresql
     values:
       - auth:
