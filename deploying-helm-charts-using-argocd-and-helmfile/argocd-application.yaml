@@ -3,11 +3,15 @@ kind: Application
 metadata:
   name: helmfile-example
 spec:
-  project: default
+  destination:
+    name: ''
+    namespace: bitnami
+    server: https://kubernetes.default.svc
   source:
+    path: deploying-helm-charts-using-argocd-and-helmfile
     repoURL: https://github.com/N7Remus/blog-code.git
     targetRevision: main
-    path: deploying-helm-charts-using-argocd-and-helmfile
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: bitnami
+    plugin:
+      name: helmfile
+  sources: []
+  project: default
